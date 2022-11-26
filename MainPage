@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
 
+        <title>A website for a select few fantasy sports</title>
+        <link href="main_page.css" type="text/css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+        
+        <style type="text/css">
+        h1{
+            font-family: 'Open Sans',Monotype Corsiva, Georgia, Times;
+        }
+        p{
+            font-family: 'Open Sans', Monotype Corsiva, Georgia, Times;
+        }
+    </style>
+        </head>
+        <body>
+            <h1>
+                Title of Website When Made
+            </h1>
+            <p>
+                This website is a project I decided to try and complete in my game and app development class. <br>
+                I hope this site is sufficent to the standards of golf fans
+            </p>
+            <h2>
+                
+            </h2>
+        </body>
+
+    
+</html>
