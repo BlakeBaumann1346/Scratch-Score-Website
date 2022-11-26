@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Create a Tournament</title>
+        <link href="TournamentCreationColors.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+        <style type = "text/css">
+        h1{
+            font-family: 'Open Sans', Monotype Corsiva, Georgia, Times;
+        }
+        p{
+            font-family: 'Open Sans', Monotype Corsiva, Georgia, Times;
+        }
+        </style>
+    </head>
+    <body>
+        
+        
+        <h1>
+            Tournament Creation
+        </h1>
+        <hr>
+        <p>
+            Welcome to the tournament creation screen. In this window you (the tournament organizer) will
+            set up an account for your specific tournament.
+        </p>
+        <hr>
+      
+        <p>
+            Please Enter a username and password for the data to be saved to.
+        </p>
+        <form>
+            <label for="username"> Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password"> Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <button onclick="saveUserData()" >Save</button>
+        </form>
+        
+    </body>
+    <script>
+
+        var usernameStored = localStorage.getItem("usernameStored");
+        var passwordStored = localStorage.getItem("savedPassword");
+        function saveUserData()
+        {
+                var usernameitem = document.getElementById("username").value;
+                localStorage.setItem("usernameStored", usernameitem);
+                document.getElementById("savedUsername").innerHTML = usernameitem + "SAVED";
+                var userpassword = document.getElementId("password").value;
+                localStorage.setItem("passwordStored", userpassword);
+                document.getElementId("savedPassword").innerHTML = userpassword + "SAVED";
+                
+            
+               /* document.write(usernameitem);*/
+        }
+        function getUserData(){
+                localStorage.getItem("usernameStored");
+                document.getElementById("openedUsername").innerHTML = usernameitem + "OPENED";
+                localStorage.getItem("passwordStored");
+                document.getElementById("openedPassword").innerHTML = userpassword + "OPENED";
+        
+        }
+        
+    </script>
+</html>
